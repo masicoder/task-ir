@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>login page</title>
+    <style>
+      @font-face {
+        font-family: "BYekan";
+        src: url("/fonts/BYekan.woff2") format("woff2");
+      }
+      .gradient-bg {
+        background: linear-gradient(
+          90deg,
+          rgba(97, 71, 168, 0.36) 0%,
+          /* چپ - خیلی کم‌رنگ */ rgba(97, 71, 168, 0.4) 50%,
+          /* وسط */ rgba(97, 71, 168, 0.81) 100% /* راست - پررنگ */
+        );
+      }
+    </style>
+  </head>
+  <body class="min-h-screen gradient-bg" style="font-family: 'BYekan'">
+    <div class="flex min-h-screen">
+      <!-- right side -->
+      <div class="w-1/2 flex flex-col items-center justify-center p-4">
+        <form
+          class="w-[350px] h-[480px] space-y-4 flex flex-col items-center justify-center  border-white text-white p-9 pr-14 rounded-[39px] shadow-[4px_4px_34.5px_0px_rgba(0,0,0,0.64)] gradient-bg"
+        >
+          <input
+            type="text"
+            placeholder="نام"
+            class="w-[274px] h-[47.48px] border border-gray-100 rounded-[19px] p-2 mb-[10px]"
+          />
+          <input
+            type="text"
+            placeholder="نام خانوادگی"
+            class="w-[274px] h-[47.48px] border border-gray-100 rounded-[19px] p-2 mb-[10px]"
+          />
+          <input
+            type="email"
+            placeholder="ایمیل"
+            class="w-[274px] h-[47.48px] border border-gray-100 rounded-[19px] p-2 mb-[10px]"
+          />
+          <input
+            type="number"
+            placeholder="شماره همراه"
+            class="w-[274px] h-[47.48px] border border-gray-100 rounded-[19px] p-2 mb-[10px]"
+          />
+          <input
+            type="text"
+            placeholder="نام کاربری"
+            class="w-[274px] h-[47.48px] border border-gray-100 rounded-[19px] p-2 mb-[10px]"
+          />
+          <input
+            type="password"
+            placeholder="رمز عبور"
+            class="w-[274px] h-[47.48px] border border-gray-100 rounded-[19px] p-2 mb-[10px]"
+          />
+          <div class="flex items-center gap-1 text-amber-50">
+            <input type="checkbox" />
+            <span>با شرایط و قوانین اکسینس موافق هستم.</span>
+          </div>
+          <button
+            type="submit"
+            class="w-[211px] bg-amber-50 text-fuchsia-950 font-bold text-xl p-2 rounded-full mb-1.5"
+          >
+            ثبت نام
+          </button>
+        </form>
+      </div>
+      <!-- left side -->
+      <div class="w-1/2 flex flex-col items-start mr-auto pl-48 pt-8">
+        <img src="logo 1.svg" alt="logo" class="mb-8 mt-3 w-80 mr-auto" />
+        <img src="Group 31.png" alt="img" class="w-full max-w-md mt-8" />
+      </div>
+    </div>
+  </body>
+</html>
